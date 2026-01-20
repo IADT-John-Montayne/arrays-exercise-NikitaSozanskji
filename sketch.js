@@ -88,6 +88,23 @@ for (let fruit of basket)
 for(let i=0; i<basket.length;i++)
 	console.log('Fruit '+ (i+1) +': '+basket[i])
 
+//search
+find="orange"
+if(basket.indexOf(find)!=-1)
+	console.log(find+' was found in place '+basket.indexOf(find))
+else
+	console.log(find+' was not found')
+
+//copy path of the basket
+console.log(basket)
+
+let citrus =[]
+if (basket.length%2!=0)
+	citrus.push=basket[basket.length%2]
+else
+	citrus = basket.slice((basket.length/2-1),(basket.length/2+1))
+console.log(citrus)
+
 function setup() {
 	createCanvas(500, 500);
 	background(55);
